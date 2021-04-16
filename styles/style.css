@@ -322,6 +322,7 @@ a {
   }
 
   .main-header {
+    z-index: 3;
     height: 130px;
   }
 }
@@ -336,6 +337,7 @@ a {
     padding-inline-end: 20px;
   }
   .container {
+    z-index: 0;
     max-width: 1000px;
   }
   .image-container {
@@ -366,8 +368,12 @@ a {
     pointer-events: auto;
     opacity: 1;
   }
+  .container{
+    z-index: 1;
+  }
 
   .main-nav {
+    z-index: 2;
     position: absolute;
     /* right: 0; */
     /* display: flex; */
@@ -383,6 +389,8 @@ a {
 
     transition: transform 0.6s;
   }
+
+  
 
   body.menu-open .main-nav {
     transform: translateY(0);

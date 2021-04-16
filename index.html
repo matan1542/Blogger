@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body >
 
-    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="main-screen"  onclick="toggleMenu()"></div>
 
    
 
@@ -117,6 +117,17 @@
 
 
     <script>
+        // function onScroll(ev){
+        //     const elMainNav = document.querySelector('.main-nav');
+        //     let currentPageYoffSet = ev.path[1].pageYOffset;
+        //     console.log((currentPageYoffSet === 94))
+        //     console.log((currentPageYoffSet))
+        //     if(currentPageYoffSet <= 94){
+        //         elMainNav.style.position = 'fixed';
+        //     }else{
+        //         elMainNav.style.position = 'absolute';
+        //     }
+        // }
         function toggleMenu() {
             document.body.classList.toggle('menu-open')
         }
